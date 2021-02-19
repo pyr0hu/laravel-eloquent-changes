@@ -2,9 +2,9 @@
 
 namespace Pyr0hu\LaravelModelChanges;
 
+use Pyr0hu\LaravelModelChanges\Commands\LaravelModelChangesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Pyr0hu\LaravelModelChanges\Commands\LaravelModelChangesCommand;
 
 class LaravelModelChangesServiceProvider extends PackageServiceProvider
 {
