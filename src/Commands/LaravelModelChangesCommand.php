@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Pyr0hu\LaravelModelChanges\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelModelChangesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-model-changes';
 
     public $description = 'My command';
 

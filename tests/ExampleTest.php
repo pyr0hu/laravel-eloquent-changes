@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Pyr0hu\LaravelModelChanges\Tests;
 
 class ExampleTest extends TestCase
 {
