@@ -1,12 +1,7 @@
 <?php
 
-namespace Pyr0hu\LaravelModelChanges\Tests;
+namespace Pyr0hu\EloquentChanges\Tests;
 
-class ExampleTest extends TestCase
+class EloquentChangesTest extends TestCase
 {
-    /** @test */
-    public function true_is_true()
-    {
-        $this->assertTrue(true);
-    }
 }

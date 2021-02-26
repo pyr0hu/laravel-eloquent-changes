@@ -1,11 +1,11 @@
 {
-    "name": "pyr0hu/laravel-model-changes",
+    "name": "pyr0hu/laravel-eloquent-changes",
     "description": "Use state-machine like definitions for model changes",
     "keywords": [
         "pyr0hu",
-        "laravel-model-changes"
+        "laravel-eloquent-changes"
     ],
-    "homepage": "https://github.com/pyr0hu/laravel-model-changes",
+    "homepage": "https://github.com/pyr0hu/laravel-eloquent-changes",
     "license": "MIT",
     "authors": [
         {
@@ -27,13 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pyr0hu\\LaravelModelChanges\\": "src",
-            "Pyr0hu\\LaravelModelChanges\\Database\\Factories\\": "database/factories"
+            "Pyr0hu\\EloquentChanges\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pyr0hu\\LaravelModelChanges\\Tests\\": "tests"
+            "Pyr0hu\\EloquentChanges\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,16 +42,6 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Pyr0hu\\LaravelModelChanges\\LaravelModelChangesServiceProvider"
-            ],
-            "aliases": {
-                "LaravelModelChanges": "Pyr0hu\\LaravelModelChanges\\LaravelModelChangesFacade"
-            }
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

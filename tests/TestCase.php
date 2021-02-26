@@ -1,10 +1,9 @@
 <?php
 
-namespace Pyr0hu\LaravelModelChanges\Tests;
+namespace Pyr0hu\EloquentChanges\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Pyr0hu\LaravelModelChanges\LaravelModelChangesServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,15 +12,8 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Pyr0hu\\LaravelModelChanges\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Pyr0hu\\EloquentChanges\\Tests\\Support\\Factories\\'.class_basename($modelName).'Factory'
         );
-    }
-
-    protected function getPackageProviders($app)
-    {
-        return [
-            LaravelModelChangesServiceProvider::class,
-        ];
     }
 
     public function getEnvironmentSetUp($app)
@@ -33,9 +25,7 @@ class TestCase extends Orchestra
             'prefix' => '',
         ]);
 
-        /*
-        include_once __DIR__.'/../database/migrations/create_laravel_model_changes_table.php.stub';
-        (new \CreatePackageTable())->up();
-        */
+        include_once __DIR__.'/Support/Migrations/create_dummy_users_table.php';
+        (new \CreateDummyUsersTable())->up();
     }
 }
