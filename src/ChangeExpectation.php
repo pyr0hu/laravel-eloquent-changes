@@ -20,6 +20,7 @@ class ChangeExpectation
     {
         $clone = clone $this;
         $clone->from = $value;
+
         return $clone;
     }
 
